@@ -33,13 +33,15 @@ public class Ventana1Controller {
 
 
 
+
+
 	ArrayList<Pokemon> ArraylistPokemon = new ArrayList();
-	Pokemon p1 = new Pokemon(1, "Jolteon", 204f, 204f, "LV.65", new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Jolteon.gif"), new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\femenino.jpg"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Jolteon_espalda.gif"));
-	Pokemon p2 = new Pokemon(2, "Charizard", 148f, 148f, "LV.45", new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\charizard.gif"), new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\masculino.jpg"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Charizard_espalda.gif"));
-	Pokemon p3 = new Pokemon(3, "Vapereon", 234f, 234f, "LV.54",new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Vaporeon.gif"), new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\femenino.jpg"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Vaporeon_espalda.gif"));
-	Pokemon p5 = new Pokemon(4, "Pikachu", 222f, 222f, "LV.65",  new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Pikachu.gif"), new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\masculino.jpg"),  new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Pikachu_espalda.gif"));
-	Pokemon p4 = new Pokemon(5, "Mewtwo", 298f, 298f, "LV.75", new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Mewtwo.gif"), new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\masculino.jpg"), new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Mewtwo_espalda.gif"));
-	Pokemon p6 = new Pokemon(6, "Butterfree", 160f, 160f, "LV.54", new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Butterfree.gif"), new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\femenino.jpg"), new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Butterfree_espalda.gif"));
+	Pokemon p1 = new Pokemon(1, "Jolteon", 204f, 204f, "LV.65", new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Jolteon.gif"), new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\femenino.jpg"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Jolteon_espalda.gif"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\evee.gif"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Vaporeon.gif"),"Jolteon, Pokemon relampago.Cuando un Jolteon esta furioso, o asustado, los pelos del cuerpo se convierten en agujas que dispara contra sus adversarios. Absorbe atomos cargados, y es capaz de producir 10.000 voltios de electricidad.",new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\estrella.jpg"));
+	Pokemon p2 = new Pokemon(2, "Charizard", 148f, 148f, "LV.45", new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\charizard.gif"), new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\masculino.jpg"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Charizard_espalda.gif"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\charmeleon2.gif"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\charmander.jpg"),"Charizard, el Pokemon llama. Charizard es de tipo volador y fuego. Cuando libra combates intensos, su llama se vuelve mucho mas potente.",new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\estrella.jpg"));
+	Pokemon p3 = new Pokemon(3, "Vapereon", 234f, 234f, "LV.54",new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Vaporeon.gif"), new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\femenino.jpg"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Vaporeon_espalda.gif"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\evee.gif"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Jolteon.gif"),"Vaporeon, el Pokemon burbuja y forma evolucionada de Eevee. La composicion de sus celulas es similar a las de las moleculas de agua y por ello puede fundirse en el agua.",new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\estrella.jpg"));
+	Pokemon p5 = new Pokemon(4, "Pikachu", 222f, 222f, "LV.65",  new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Pikachu.gif"), new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\masculino.jpg"),  new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Pikachu_espalda.gif"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Pichu_E.gif"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\raichu2.gif"),"Pikachu, el Pokemon raton. Puede generar ataques electricos desde los coloretes electricos localizados en sus mejillas.",new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\estrella.jpg"));
+	Pokemon p4 = new Pokemon(5, "Mewtwo", 298f, 298f, "LV.75", new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Mewtwo.gif"), new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\masculino.jpg"), new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Mewtwo_espalda.gif"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Mewtwo.gif"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\mewtwo_s.gif"),"Mewtwo es sumamente habil con sus poderes psiquicos: puede volar mediante la levitacion, comunicarse telepaticamente, reflejar ataques como hiperrayo, bloquear las habilidades especiales de los demas Pokemon y tomar el mando de la mente de otra criatura viva mediante hipnosis.",new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\estrella.jpg"));
+	Pokemon p6 = new Pokemon(6, "Butterfree", 160f, 160f, "LV.54", new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Butterfree.gif"), new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\femenino.jpg"), new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Butterfree_espalda.gif"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\caterpie.gif"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\metapod.gif")," Butterfree, el Pokemon mariposa. Butterfree es la forma evolucionada de Metapod. Las escamas que cubren sus alas le ayudan a deshacerse del agua.",new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\estrella.jpg"));
 
 	//POKEMON 1
 	@FXML
@@ -56,6 +58,9 @@ public class Ventana1Controller {
 	ImageView img1;
 	@FXML
 	ProgressBar progress1;
+	@FXML
+	ImageView estrellita1;
+
 	//POKEMON 2
 	@FXML
 	AnchorPane Anchor2;
@@ -69,6 +74,8 @@ public class Ventana1Controller {
 	Label l6Vida2;
 	@FXML
 	ImageView img2;
+	@FXML
+	ImageView estrellita2;
 	@FXML
 	ProgressBar progress2;
 	//POKEMON 3
@@ -84,6 +91,8 @@ public class Ventana1Controller {
 	Label l8Nivel3;
 	@FXML
 	Label l9Vida3;
+	@FXML
+	ImageView estrellita3;
 	@FXML
 	ProgressBar progress3;
 	//POKEMON4
@@ -101,6 +110,8 @@ public class Ventana1Controller {
 	ProgressBar progress4;
 	@FXML
 	Label l12Vida4;
+	@FXML
+	ImageView estrellita4;
 	//POKEMON 5
 	@FXML
 	AnchorPane Anchor5;
@@ -116,6 +127,8 @@ public class Ventana1Controller {
 	ProgressBar progress5;
 	@FXML
 	ImageView Sexo5;
+	@FXML
+	ImageView estrellita5;
 	//POKEMON 6
 	@FXML
 	AnchorPane Anchor6;
@@ -131,11 +144,16 @@ public class Ventana1Controller {
 	Label l18Vida6;
 	@FXML
 	ProgressBar progress6;
+	@FXML
+	ImageView estrellita6;
+
 	//boton siguiente pagina
 	@FXML
 	Button boton_combate1;
 	@FXML
 	Button boton_estadisticas;
+	@FXML
+	Button boton_pokedex;
 
 
 	private Ventana2controller v;
@@ -190,6 +208,18 @@ public class Ventana1Controller {
 		img5.setImage(imagen5);
 		Image imagen6=new Image(p6.foto.toURI().toString());
 		img6.setImage(imagen6);
+		Image imagenestrellita1=new Image(p1.estrella.toURI().toString());
+		estrellita1.setImage(imagenestrellita1);
+		Image imagenestrellita2=new Image(p2.estrella.toURI().toString());
+		estrellita2.setImage(imagenestrellita2);
+		Image imagenestrellita3=new Image(p3.estrella.toURI().toString());
+		estrellita3.setImage(imagenestrellita3);
+		Image imagenestrellita4=new Image(p5.estrella.toURI().toString());
+		estrellita4.setImage(imagenestrellita4);
+		Image imagenestrellita5=new Image(p4.estrella.toURI().toString());
+		estrellita5.setImage(imagenestrellita5);
+		Image imagenestrellita6=new Image(p6.estrella.toURI().toString());
+		estrellita6.setImage(imagenestrellita6);
 		progress1.setProgress(p1.vida_actual / p1.vida);
 		progress2.setProgress(p2.vida_actual / p2.vida);
 		progress3.setProgress(p3.vida_actual / p3.vida);
@@ -197,6 +227,9 @@ public class Ventana1Controller {
 		progress5.setProgress(p5.vida_actual / p5.vida);
 		progress6.setProgress(p6.vida_actual / p6.vida);
 		boton_combate1.setDisable(true);
+		boton_pokedex.setDisable(true);
+
+
 
 
 
@@ -207,6 +240,7 @@ public class Ventana1Controller {
 		System.out.println("anchor pulsado");
 		desclick();
 		opacity();
+		boton_pokedex();
 		boton_combate();
 		Anchor1.setStyle("-fx-background-color:#675073");
 		img1.setStyle("-fx-opacity:1");
@@ -220,6 +254,7 @@ public class Ventana1Controller {
 		System.out.println("anchor pulsado");
 		desclick();
 		opacity();
+		boton_pokedex();
 		boton_combate();
 		Anchor2.setStyle("-fx-background-color:#675073;");
 		img2.setStyle("-fx-opacity:1");
@@ -232,6 +267,7 @@ public class Ventana1Controller {
 		System.out.println("anchor pulsado");
 		desclick();
 		opacity();
+		boton_pokedex();
 		boton_combate();
 		Anchor3.setStyle("-fx-background-color:#675073;");
 		img3.setStyle("-fx-opacity:1");
@@ -244,6 +280,7 @@ public class Ventana1Controller {
 		System.out.println("anchor pulsado");
 		desclick();
 		opacity();
+		boton_pokedex();
 		boton_combate();
 		Anchor4.setStyle("-fx-background-color:#675073;");
 		img4.setStyle("-fx-opacity:1");
@@ -256,6 +293,7 @@ public class Ventana1Controller {
 		System.out.println("anchor pulsado");
 		desclick();
 		opacity();
+		boton_pokedex();
 		boton_combate();
 		Anchor5.setStyle("-fx-background-color:#675073;");
 		img5.setStyle("-fx-opacity:1");
@@ -268,6 +306,7 @@ public class Ventana1Controller {
 		System.out.println("anchor pulsado");
 		desclick();
 		opacity();
+		boton_pokedex();
 		boton_combate();
 		Anchor6.setStyle("-fx-background-color: #675073;");
 		img6.setStyle("-fx-opacity:1");
@@ -312,13 +351,15 @@ public class Ventana1Controller {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("/Ventana4.fxml"));
 
 			BorderPane root = loader.load();
-			Scene scene = new Scene(root, 300, 600);
+			Scene scene = new Scene(root, 400, 600);
+			//stage4.setResizable(false);
 
 			stage4.setScene(scene);
 			stage4.show();
 
 			Ventana4Controller v = loader.getController();
 			v.datos(pokemon_amigo);
+			v.enviarController1(this);
 
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -376,8 +417,13 @@ public class Ventana1Controller {
 
 	private void boton_combate() {
 		boton_combate1.setDisable(false);
-		boton_combate1.setStyle("-fx-opacity:1");
+		boton_combate1.setStyle("-fx-opacity:1;-fx-border-color: #bf67ac; -fx-background-color:  #7D6A87; -fx-border-width: 5; -fx-background-radius: 20; -fx-border-radius: 20;");
 	}
+	private void boton_pokedex(){
+		boton_pokedex.setDisable(false);
+		boton_pokedex.setStyle("-fx-opacity:1;-fx-border-color: #bf67ac; -fx-background-color:  #7D6A87; -fx-border-width: 5; -fx-background-radius: 20; -fx-border-radius: 20;");
+	}
+
 
 	public void actualizar_pokemon(Pokemon pokemon_amigo) {
 		ArraylistPokemon.set(pokemon_amigo.getIndex(), pokemon_amigo);

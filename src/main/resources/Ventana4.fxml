@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -7,23 +8,45 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane fx:id="pokedex" prefHeight="600.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Ventana4Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Ventana4Controller">
+   <top>
+      <AnchorPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #675073;" BorderPane.alignment="CENTER" />
+   </top>
    <center>
-      <AnchorPane prefHeight="400.0" prefWidth="0.0" style="-fx-background-color: #D01E36;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #7D6A87;" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fx:id="img_p" fitHeight="150.0" fitWidth="216.0" layoutX="43.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-
-               </image>
-            </ImageView>
-            <ImageView fx:id="evo1" fitHeight="109.0" fitWidth="127.0" layoutX="14.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fx:id="evo" fitHeight="109.0" fitWidth="127.0" layoutX="151.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true" />
-            <Text fx:id="texto" layoutX="36.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="229.13671875" />
-            <Label layoutX="131.0" layoutY="334.0" prefHeight="17.0" prefWidth="88.0" text="EVOLUCIÓN">
+            <ImageView fx:id="img_p" fitHeight="116.0" fitWidth="155.0" layoutX="123.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="evo1" fitHeight="70.0" fitWidth="70.0" layoutX="81.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="evo" fitHeight="70.0" fitWidth="70.0" layoutX="243.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="texto" layoutX="39.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="JUSTIFY" wrappingWidth="301.13671875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Label fx:id="nombre" layoutX="68.0" layoutY="149.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="151.0" layoutY="329.0" text="EVOLUCION">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="cerrrar" layoutX="175.0" layoutY="477.0" mnemonicParsing="false" onMouseClicked="#cerrar" prefHeight="37.0" prefWidth="55.0" style="-fx-border-radius: 20; -fx-border-color: #bf67ac; -fx-border-width: 5; -fx-background-radius: 35; -fx-background-color: #675073;" text="X" textFill="#fffeff">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="marcar_fav" layoutX="269.0" layoutY="39.0" mnemonicParsing="false" onMouseClicked="#marcar_fav" style="-fx-background-radius: 20; -fx-border-color: #bf67ac; -fx-border-radius: 20; -fx-border-width: 5; -fx-background-color: #675073;" text="MARCAR FAV" textFill="#fffdff">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
-            </Label>
-         </children></AnchorPane>
+            </Button>
+         </children>
+      </AnchorPane>
    </center>
+   <bottom>
+      <AnchorPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #675073;" BorderPane.alignment="CENTER" />
+   </bottom>
 </BorderPane>

@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="600.0" style="-fx-background-color: #7D6A87;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Ventana1Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #7D6A87;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Ventana1Controller">
    <center>
       <GridPane prefHeight="359.0" prefWidth="600.0" BorderPane.alignment="CENTER">
         <columnConstraints>
@@ -61,6 +61,7 @@
                         <Image url="@tick.PNG" />
                      </image>
                   </ImageView>
+                  <ImageView fx:id="estrellita1" fitHeight="15.0" fitWidth="15.0" layoutX="180.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0;" />
                </children>
             </AnchorPane>
             <AnchorPane fx:id="Anchor2" onMouseClicked="#clickear2" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
@@ -97,6 +98,7 @@
                         <Image url="@tick.PNG" />
                      </image>
                   </ImageView>
+                  <ImageView fx:id="estrellita2" fitHeight="15.0" fitWidth="15.0" layoutX="180.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0;" />
                </children>
             </AnchorPane>
             <AnchorPane fx:id="Anchor4" onMouseClicked="#clickear4" prefHeight="165.0" prefWidth="200.0" GridPane.rowIndex="1">
@@ -133,6 +135,7 @@
                         <Image url="@tick.PNG" />
                      </image>
                   </ImageView>
+                  <ImageView fx:id="estrellita4" fitHeight="15.0" fitWidth="15.0" layoutX="180.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0;" />
                </children>
             </AnchorPane>
             <AnchorPane fx:id="Anchor5" onMouseClicked="#clickear5" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
@@ -169,6 +172,7 @@
                         <Image url="@tick.PNG" />
                      </image>
                   </ImageView>
+                  <ImageView fx:id="estrellita5" fitHeight="15.0" fitWidth="15.0" layoutX="180.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0;" />
                </children>
             </AnchorPane>
             <AnchorPane fx:id="Anchor6" onMouseClicked="#clickear6" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
@@ -205,6 +209,8 @@
                         <Image url="@tick.PNG" />
                      </image>
                   </ImageView>
+                  <ImageView fx:id="estrellita6" fitHeight="15.0" fitWidth="15.0" layoutX="170.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0;" />
+                  <ImageView fx:id="Sexo611" fitHeight="15.0" fitWidth="15.0" layoutX="170.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
                </children>
             </AnchorPane>
             <AnchorPane fx:id="Anchor3" onMouseClicked="#clickear3" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
@@ -241,6 +247,7 @@
                         <Image url="@tick.PNG" />
                      </image>
                   </ImageView>
+                  <ImageView fx:id="estrellita3" fitHeight="15.0" fitWidth="15.0" layoutX="170.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0;" />
                </children>
             </AnchorPane>
 
@@ -251,7 +258,10 @@
    <bottom>
       <AnchorPane fx:id="Anchor7" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #675073;" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="boton_combate1" disable="true" layoutX="484.0" mnemonicParsing="false" onMouseClicked="#pelea" opacity="0.0" text="Continuar" />
+            <Button fx:id="boton_combate1" disable="true" layoutX="484.0" mnemonicParsing="false" onMouseClicked="#pelea" opacity="0.0" text="CONTINUAR" textFill="#f8f6f6">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
             <Label graphicTextGap="20.0" layoutX="59.0" layoutY="4.0" text="ELIGE UN POKEMON..." textFill="#f9f9fa" textOverrun="CENTER_WORD_ELLIPSIS">
                <font>
                   <Font name="Arial Bold" size="15.0" />
@@ -261,8 +271,14 @@
    <top>
       <AnchorPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #675073;" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="boton_estadisiticas" layoutX="13.0" layoutY="4.0" mnemonicParsing="false" onMouseClicked="#estadisticas" prefHeight="25.0" prefWidth="64.0" text="Stats" />
-            <Button fx:id="pokedex" layoutX="277.0" layoutY="4.0" mnemonicParsing="false" onMouseClicked="#pokedex" text="POKEDEX" />
+            <Button fx:id="boton_estadisiticas" layoutX="13.0" layoutY="4.0" mnemonicParsing="false" onMouseClicked="#estadisticas" prefHeight="25.0" prefWidth="64.0" style="-fx-border-color: #bf67ac; -fx-background-color: #7D6A87; -fx-border-width: 5; -fx-background-radius: 20; -fx-border-radius: 20;" text="Stats" textFill="#fffbfb">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button fx:id="boton_pokedex" layoutX="279.0" layoutY="4.0" mnemonicParsing="false" onMouseClicked="#pokedex" prefHeight="30.0" prefWidth="117.0" style="-fx-opacity: 0;" text="POKEDEX" textFill="#f8f6f6">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
          </children></AnchorPane>
    </top>
 </BorderPane>
