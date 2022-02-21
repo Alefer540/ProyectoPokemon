@@ -277,6 +277,7 @@ public class Ventana1Controller {
 
 	Stage stage2;
 	Stage stage3;
+	Stage stage4;
 
 	@FXML
 	public void pelea() {
@@ -300,6 +301,29 @@ public class Ventana1Controller {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+
+	}
+	@FXML
+	public void pokedex() {
+		System.out.println("Boton pulsado pasamos al siguiente escenario");
+		try {
+
+			stage4 = new Stage();
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("/Ventana4.fxml"));
+
+			BorderPane root = loader.load();
+			Scene scene = new Scene(root, 300, 600);
+
+			stage4.setScene(scene);
+			stage4.show();
+
+			Ventana4Controller v = loader.getController();
+			v.datos(pokemon_amigo);
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 
 	}
 	@FXML
@@ -327,7 +351,9 @@ public class Ventana1Controller {
 			e.printStackTrace();
 		}
 
+
 	}
+
 	@FXML
 	private void desclick() {
 		Anchor6.setStyle("-fx-background-color: #7D6A87;");

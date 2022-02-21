@@ -4,7 +4,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 
 
 import java.io.File;
@@ -19,6 +18,7 @@ public class Ventana2controller {
     Pokemon_enemigo p_e2 = new Pokemon_enemigo("Palkia",650f,650f,"NV.120",new File( ".\\src\\main\\java\\sample\\ImagenesPokemon\\Palkia.gif"), new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\masculino.jpg"));
     Pokemon_enemigo p_e3 = new Pokemon_enemigo("Onix",200f,200f,"NV.55",new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Onix.gif"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\femenino.jpg"));
     Pokemon_enemigo p_e4 = new Pokemon_enemigo("Gyarados",200f,200f,"NV.55",new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Gyarados.gif"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\femenino.jpg"));
+
 
 
     @FXML
@@ -57,10 +57,13 @@ public class Ventana2controller {
             Label ps;
     @FXML
     Label ps1;
+    @FXML
+    ImageView fondo_Batalla;
 
 
     Pokemon_enemigo oponente;
     Pokemon Pokemon_amigo;
+  
 
     public void funcioninicio(Pokemon Pokemon_amigo) {
         this.Pokemon_amigo = Pokemon_amigo;

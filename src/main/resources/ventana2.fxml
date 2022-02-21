@@ -14,6 +14,7 @@
          <children>
             <ImageView fx:id="img_espaldas" fitHeight="172.0" fitWidth="221.0" layoutX="76.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="img_enemigo" fitHeight="150.0" fitWidth="200.0" layoutX="434.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="fondo_Batalla" fitHeight="327.0" fitWidth="707.0" layoutX="-5.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true" />
             <AnchorPane layoutX="37.0" layoutY="28.0" prefHeight="70.0" prefWidth="216.0" style="-fx-background-color: #F9FBD4; -fx-border-color: #41483F; -fx-border-width: 4; -fx-border-radius: 15 7 15 7; -fx-background-radius: 15 7 15 7;">
                <children>
                   <Label fx:id="name_enemigo_pokemon" layoutX="51.0" layoutY="14.0" prefHeight="20.0" prefWidth="72.0" text="Label">

@@ -262,6 +262,7 @@
       <AnchorPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #675073;" BorderPane.alignment="CENTER">
          <children>
             <Button fx:id="boton_estadisiticas" layoutX="13.0" layoutY="4.0" mnemonicParsing="false" onMouseClicked="#estadisticas" prefHeight="25.0" prefWidth="64.0" text="Stats" />
+            <Button fx:id="pokedex" layoutX="277.0" layoutY="4.0" mnemonicParsing="false" onMouseClicked="#pokedex" text="POKEDEX" />
          </children></AnchorPane>
    </top>
 </BorderPane>
