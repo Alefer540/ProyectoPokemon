@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane fx:id="pokedex" prefHeight="700.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Ventana4Controller">
+<BorderPane fx:id="pokedex" prefHeight="600.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Ventana4Controller">
    <center>
       <AnchorPane prefHeight="400.0" prefWidth="0.0" style="-fx-background-color: #D01E36;" BorderPane.alignment="CENTER">
          <children>
@@ -19,7 +19,7 @@
             <ImageView fx:id="evo1" fitHeight="109.0" fitWidth="127.0" layoutX="14.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="evo" fitHeight="109.0" fitWidth="127.0" layoutX="151.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true" />
             <Text fx:id="texto" layoutX="36.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="229.13671875" />
-            <Label layoutX="106.0" layoutY="333.0" prefHeight="17.0" prefWidth="88.0" text="EVOLUCIÓN">
+            <Label layoutX="131.0" layoutY="334.0" prefHeight="17.0" prefWidth="88.0" text="EVOLUCIÓN">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
