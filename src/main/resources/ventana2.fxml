@@ -92,7 +92,6 @@
                      </font>
                   </Button>
                </children></AnchorPane>
-            <Label text="Label" />
          </children></AnchorPane>
    </bottom>
 </BorderPane>
