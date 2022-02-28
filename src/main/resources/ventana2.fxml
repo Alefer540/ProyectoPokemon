@@ -58,7 +58,14 @@
    <bottom>
       <AnchorPane prefHeight="129.0" prefWidth="700.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
          <children>
-            <AnchorPane layoutX="460.0" layoutY="3.0" prefHeight="124.0" prefWidth="236.0" style="-fx-background-color: #F9FBD4; -fx-border-color: #4472C4; -fx-border-radius: 7; -fx-border-width: 7; -fx-background-radius: 10;" />
+            <AnchorPane layoutX="460.0" layoutY="3.0" prefHeight="124.0" prefWidth="236.0" style="-fx-background-color: #F9FBD4; -fx-border-color: #4472C4; -fx-border-radius: 7; -fx-border-width: 7; -fx-background-radius: 10;">
+               <children>
+                  <Button fx:id="mochila1" graphicTextGap="0.0" layoutX="78.0" layoutY="44.0" lineSpacing="4.0" mnemonicParsing="false" onMouseClicked="#mochila" style="-fx-background-color: #CDA13A; -fx-border-color: #EEAE1A; -fx-border-radius: 20; -fx-border-width: 5; -fx-background-radius: 20;" text="MOCHILA" textAlignment="CENTER" textFill="#f8f8f8">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
             <AnchorPane layoutX="4.0" layoutY="3.0" prefHeight="124.0" prefWidth="451.0" style="-fx-background-color: #F9FBD4; -fx-border-radius: 7; -fx-border-color: #4472C4; -fx-border-width: 7; -fx-background-radius: 10;">
                <children>
                   <Button fx:id="ataque_seguro" layoutX="52.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#ataque" prefHeight="27.0" prefWidth="160.0" style="-fx-opacity: 0;" text="SEGURO" textAlignment="CENTER" textFill="#fcfcfc">

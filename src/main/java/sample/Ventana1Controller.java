@@ -35,7 +35,7 @@ public class Ventana1Controller {
 
 
 
-	ArrayList<Pokemon> ArraylistPokemon = new ArrayList();
+	 ArrayList<Pokemon> ArraylistPokemon = new ArrayList();
 	Pokemon p1 = new Pokemon(1, "Jolteon", 204f, 204f, "LV.65", new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Jolteon.gif"), new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\femenino.jpg"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Jolteon_espalda.gif"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\evee.gif"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Vaporeon.gif"),"Jolteon, Pokemon relampago.Cuando un Jolteon esta furioso, o asustado, los pelos del cuerpo se convierten en agujas que dispara contra sus adversarios. Absorbe atomos cargados, y es capaz de producir 10.000 voltios de electricidad.",new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\estrella.jpg"));
 	Pokemon p2 = new Pokemon(2, "Charizard", 148f, 148f, "LV.45", new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\charizard.gif"), new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\masculino.jpg"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Charizard_espalda.gif"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\charmeleon2.gif"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\charmander.jpg"),"Charizard, el Pokemon llama. Charizard es de tipo volador y fuego. Cuando libra combates intensos, su llama se vuelve mucho mas potente.",new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\estrella.jpg"));
 	Pokemon p3 = new Pokemon(3, "Vapereon", 234f, 234f, "LV.54",new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Vaporeon.gif"), new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\femenino.jpg"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Vaporeon_espalda.gif"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\evee.gif"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Jolteon.gif"),"Vaporeon, el Pokemon burbuja y forma evolucionada de Eevee. La composicion de sus celulas es similar a las de las moleculas de agua y por ello puede fundirse en el agua.",new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\estrella.jpg"));
@@ -317,6 +317,7 @@ public class Ventana1Controller {
 	Stage stage2;
 	Stage stage3;
 	Stage stage4;
+	Stage stage5;
 
 	@FXML
 	public void pelea() {
@@ -335,6 +336,7 @@ public class Ventana1Controller {
 			Ventana2controller v = loader.getController();
 			v.funcioninicio(pokemon_amigo);
 			v.enviarController1(this);
+
 
 
 		} catch (IOException e) {
@@ -387,6 +389,32 @@ public class Ventana1Controller {
 
 
 
+
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+
+	}
+	@FXML
+	public void mochila() {
+		System.out.println("Boton pulsado pasamos al siguiente escenario");
+		try {
+
+			stage5 = new Stage();
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("/Ventana5.fxml"));
+
+			BorderPane root = loader.load();
+			Scene scene = new Scene(root, 400, 600);
+			//stage4.setResizable(false);
+
+			stage5.setScene(scene);
+			stage5.show();
+
+			Ventana5Controller v = loader.getController();
+			v.datos(pokemon_amigo);
+			v.enviarController1(this);
 
 		} catch (IOException e) {
 			e.printStackTrace();

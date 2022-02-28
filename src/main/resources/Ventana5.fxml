@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Ventana5Controller">
+   <top>
+      <AnchorPane prefHeight="30.0" prefWidth="700.0" style="-fx-background-color: #675073;" BorderPane.alignment="CENTER" />
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #675073;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #7D6A87;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="img_p" fitHeight="114.0" fitWidth="138.0" layoutX="125.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="nombre_p" layoutX="31.0" layoutY="14.0" text="Label" textAlignment="CENTER" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <ProgressBar fx:id="vida_p" layoutX="100.0" layoutY="216.0" prefWidth="200.0" progress="0.0" />
+            <ImageView fx:id="revivir" fitHeight="59.0" fitWidth="65.0" layoutX="46.0" layoutY="287.0" onMouseClicked="#revivir_p" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@revivir.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p_maxima" fitHeight="59.0" fitWidth="65.0" layoutX="179.0" layoutY="287.0" onMouseClicked="#p_maxima" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pocion_maxima.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="cerrar" layoutX="181.0" layoutY="485.0" mnemonicParsing="false" onMouseClicked="#cerrar" style="-fx-border-radius: 20; -fx-border-color: #bf67ac; -fx-border-width: 5; -fx-background-radius: 35; -fx-background-color: #675073;" text="X" textFill="#f2eaea">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="antidoto" fitHeight="59.0" fitWidth="65.0" layoutX="317.0" layoutY="287.0" onMouseClicked="#antidoto" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@antidoto.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="36.0" layoutY="356.0" text="REVIVIR" textFill="#f5eeee">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="165.0" layoutY="356.0" text="POCION" textAlignment="CENTER" textFill="#f8f7f7">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="296.0" layoutY="356.0" text="ANTIDOTO" textAlignment="CENTER" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Text fill="#fcf2f2" layoutX="21.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Te permite recuperar la vida maxima de tu pokemon seleccionado" textAlignment="CENTER" wrappingWidth="87.13671875">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="#fcf9f9" layoutX="152.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recupera 40 puntos de salud de tu pokemon seleccionado" textAlignment="CENTER" wrappingWidth="96.13671875">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="#ebe7e7" layoutX="297.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recupera 20 puntos de salud de tu pokemon seleccioando" textAlignment="CENTER" wrappingWidth="77.13671875">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,17 +1,25 @@
 package sample;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
 
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Optional;
 
 
 public class Ventana2controller {
+
+    ArrayList<Pokemon> listaPokemones =null;
 
     ArrayList<Pokemon_enemigo> Pokemon_enemigos = new ArrayList();
     Pokemon_enemigo p_e1 = new Pokemon_enemigo("Arbok",250f,250f,"NV.70",new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\Arbok.gif"),new File(".\\src\\main\\java\\sample\\ImagenesPokemon\\masculino.jpg"));
@@ -63,7 +71,9 @@ public class Ventana2controller {
 
     Pokemon_enemigo oponente;
     Pokemon Pokemon_amigo;
-  
+
+
+
 
     public void funcioninicio(Pokemon Pokemon_amigo) {
         this.Pokemon_amigo = Pokemon_amigo;
@@ -91,6 +101,7 @@ public class Ventana2controller {
         ataque_muy_arriesgado.setDisable(true);
         cancelar_ataque.setDisable(true);
         ataque_seguro.setDisable(true);
+
 
     }
     private Ventana1Controller ventana1Controller;
@@ -205,6 +216,7 @@ public class Ventana2controller {
         luchar.setStyle("-fx-opacity:1;-fx-background-color: #F8A9B1; -fx-border-color: #D43E41; -fx-border-radius: 20; -fx-border-width: 5; -fx-background-radius: 20;");
         curarse.setStyle("-fx-opacity:1;-fx-background-radius: 20; -fx-border-width: 5; -fx-border-radius: 20; -fx-background-color: #2891C9; -fx-border-color: #3A668A;");
     }
+   
 
 
     private void aparecer_botones_ataques(){
@@ -307,8 +319,8 @@ public class Ventana2controller {
     }
 
 
-
-
+    public void mochila(MouseEvent mouseEvent) {
+    }
 }
 
 

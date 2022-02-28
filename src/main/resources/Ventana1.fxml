@@ -271,7 +271,7 @@
    <top>
       <AnchorPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #675073;" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="boton_estadisiticas" layoutX="13.0" layoutY="4.0" mnemonicParsing="false" onMouseClicked="#estadisticas" prefHeight="25.0" prefWidth="64.0" style="-fx-border-color: #bf67ac; -fx-background-color: #7D6A87; -fx-border-width: 5; -fx-background-radius: 20; -fx-border-radius: 20;" text="Stats" textFill="#fffbfb">
+            <Button fx:id="boton_estadisiticas" layoutX="13.0" layoutY="4.0" mnemonicParsing="false" onMouseClicked="#estadisticas" prefHeight="40.0" prefWidth="92.0" style="-fx-border-color: #bf67ac; -fx-background-color: #7D6A87; -fx-border-width: 5; -fx-background-radius: 20; -fx-border-radius: 20;" text="STATS" textFill="#fffbfb">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></Button>
@@ -279,6 +279,11 @@
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></Button>
+            <Button fx:id="boton_mochila" layoutX="564.0" layoutY="4.0" mnemonicParsing="false" onMouseClicked="#mochila" prefHeight="40.0" prefWidth="98.0" style="-fx-border-color: #bf67ac; -fx-background-color: #7D6A87; -fx-border-width: 5; -fx-background-radius: 20; -fx-border-radius: 20;" text="MOCHILA" textFill="#fffbfb">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
          </children></AnchorPane>
    </top>
 </BorderPane>
