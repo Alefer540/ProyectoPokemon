@@ -22,6 +22,8 @@ public class Ventana4Controller {
      ImageView evo1;
      @FXML
      Label nombre;
+     @FXML
+     ImageView estrella;
 
 
     Pokemon Pokemon_amigo;
@@ -47,23 +49,29 @@ public class Ventana4Controller {
     }
     @FXML
     private void marcar_fav(){
-        if (Pokemon_amigo.index == 1) {
+        if (Pokemon_amigo.index == 1 ) {
             ventana1Controller.estrellita1.setStyle("-fx-opacity:1");
+            estrella.setStyle("-fx-opacity:1");
         }
-        if (Pokemon_amigo.index == 2) {
+        if (Pokemon_amigo.index == 2 ) {
             ventana1Controller.estrellita2.setStyle("-fx-opacity:1");
+            estrella.setStyle("-fx-opacity:1");
         }
-        if (Pokemon_amigo.index == 3) {
+        if (Pokemon_amigo.index == 3 ) {
             ventana1Controller.estrellita3.setStyle("-fx-opacity:1");
+            estrella.setStyle("-fx-opacity:1");
         }
-        if (Pokemon_amigo.index == 4) {
+        if (Pokemon_amigo.index == 4 ) {
             ventana1Controller.estrellita5.setStyle("-fx-opacity:1");
+            estrella.setStyle("-fx-opacity:1");
         }
-        if (Pokemon_amigo.index == 5) {
+        if (Pokemon_amigo.index == 5 )  {
             ventana1Controller.estrellita4.setStyle("-fx-opacity:1");
+            estrella.setStyle("-fx-opacity:1");
         }
-        if (Pokemon_amigo.index == 6) {
+        if (Pokemon_amigo.index == 6 ) {
             ventana1Controller.estrellita6.setStyle("-fx-opacity:1");
+            estrella.setStyle("-fx-opacity:1");
         }
        ventana1Controller.actualizar_pokemon(Pokemon_amigo);
 

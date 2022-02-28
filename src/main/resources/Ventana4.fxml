@@ -49,6 +49,11 @@
                   <Image url="@flecha.png" />
                </image>
             </ImageView>
+            <ImageView fx:id="estrella" fitHeight="38.0" fitWidth="41.0" layoutX="301.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0;">
+               <image>
+                  <Image url="@estrella.jpg" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </center>

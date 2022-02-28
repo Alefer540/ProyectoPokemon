@@ -18,6 +18,7 @@ public class Pokemon{
     String descrip;
     File estrella;
 
+
     Pokemon(int index, String nombre, Float vida, Float vida_actual, String nivel, File foto, File sexo, File foto_detras,File evo,File evo1,String descrip,File estrella) {
         this.index = index;
         this.nombre=nombre;
@@ -31,6 +32,8 @@ public class Pokemon{
         this.evo1=evo1;
         this.descrip=descrip;
        this.estrella=estrella;
+
+
 
     }
 
